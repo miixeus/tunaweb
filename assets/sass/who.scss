@@ -1,0 +1,152 @@
+#who {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 42rem;
+    margin-top: -23.25rem;
+    background-image: linear-gradient(145deg, #004968, #081E17); 
+    .box-md {
+        flex-direction: column;
+        .identity {
+            display: flex;
+            height: 122px; 
+            padding-top: 29rem;       
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            span {
+            font-size: 68px;
+            font-weight: 700;
+
+            }
+
+        }
+        .flex-image{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 5rem;
+            position: relative;
+
+            .list-who {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                width: 146px;
+                height: 140px;
+                justify-content: space-between;
+                .li-one {
+                    background-color: #DD1960;
+                    border-radius: 75px 8px 96px 8px;
+                    height: 33px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    align-items: center;
+                    font-size: 14px;
+                    justify-content: center;
+                    box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
+                }
+                .li-two {
+                    background-color: #B4C538;
+                    border-radius: 75px 8px 96px 8px;
+                    height: 33px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    align-items: center;
+                    font-size: 14px;
+                    justify-content: center;
+                    box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
+                }
+                .li-three {
+                    background-color: #17A2CD;
+                    border-radius: 75px 8px 96px 8px;
+                    height: 33px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    align-items: center;
+                    font-size: 14px;
+                    justify-content: center;
+                    box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
+                }
+            }
+        }
+    }
+}
+@media(min-width:768px) {
+    #who {
+        margin-top: -30.25rem;
+        flex-direction: row;
+        justify-content: center;
+        .box-md{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 60rem;
+            margin: 0rem 2rem;
+            .identity {
+                display: flex;
+                height: 122px; 
+                padding-top: 37rem;       
+                color: white;
+                font-weight: bold;
+                span {
+                  font-size: 5.5rem;
+                  font-weight: 700;
+        
+                }
+        
+            }
+            .flex-image{
+                padding-top: 29rem;
+                justify-content: space-between;
+                position: relative;
+                width: 21.5rem;
+        
+                .list-who {
+                    width: 9.5rem;
+                    padding-left: 2rem;
+                    .li-one {
+                        background-color: #DD1960;
+                        border-radius: 75px 8px 96px 8px;
+                        height: 33px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        align-items: center;
+                        font-size: 14px;
+                        justify-content: center;
+                        box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
+                    }
+                    .li-two {
+                        background-color: #B4C538;
+                        border-radius: 75px 8px 96px 8px;
+                        height: 33px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        align-items: center;
+                        font-size: 14px;
+                        justify-content: center;
+                        box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
+                    }
+                    .li-three {
+                        background-color: #17A2CD;
+                        border-radius: 75px 8px 96px 8px;
+                        height: 33px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        align-items: center;
+                        font-size: 14px;
+                        justify-content: center;
+                        box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
+                    }
+                }
+            }
+        }
+
+        
+        
+    }
+
+
+}

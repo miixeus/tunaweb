@@ -1,0 +1,197 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 60rem;
+    background-image: linear-gradient( #0A304A, #000000);
+    align-items: center;
+    .reserch {
+        background-image: linear-gradient(#F1F1F1, #FFFFFF);
+        width: 23.12rem;
+        height: 12.5rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        .paragraph-footer {
+            width: auto;
+            color: rgb(0, 0, 0);
+            height: 104px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 0.2rem;
+            .tight {
+                font-weight: 500;
+                padding: .2rem;
+            }
+            .tunaweb {
+                font-size: 1.12rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+        .button-row{
+            width: 100%;
+            margin: 1rem; 
+            justify-content: center;
+            .button-whats {
+                display: flex;
+                height: 42px;
+                width: 242px;
+                border-radius: 20px;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                background-image: linear-gradient(45deg, #92FFB0, #00E23F);
+                .link-whats {
+                    color: #000000;
+                    font-size: 12px;
+                    font-weight: 800;
+                    width: 195px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .title-footer {
+        color: #F2F2F2;
+        padding: 1rem 1.6rem;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-top: 4.2rem;
+    }
+    .box-social-media {
+        width: 100%;
+        height: 20rem;
+        flex-direction: column;
+        align-items: center;
+        .social-media {
+           padding: 1rem;
+        }
+    }
+    .email-footer {
+        display: flex;
+        width: 100%;
+        height: 4rem;
+        justify-content: center;
+        align-items: center;
+        .email {
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+    }
+    .rights {
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #footer {
+        height: 70rem;
+        .reserch {
+            background-image: linear-gradient(145deg, #130a69, #4b0a80);
+            width: 80%;
+            height: 16.5rem;
+            box-shadow: 1px 2px 6px rgb(36, 36, 36);
+            .paragraph-footer {
+                width: auto;
+                color: rgb(255, 255, 255);
+                height: 7.5rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 0.2rem;
+                .tight {
+                    font-weight: 800;
+                    padding: .2rem;
+                }
+                .tunaweb {
+                    border: .25rem;
+                    background-color: white;
+                    color: rgb(9, 27, 107);
+                    font-size: 2.12rem;
+                    font-weight: 800;
+                    padding: .5rem;
+                    text-transform: uppercase;
+                }
+            }
+            .button-row{
+                width: 100%;
+                margin: 1rem; 
+                justify-content: center;
+                .button-whats {
+                    box-shadow: 1px 2px 6px rgb(36, 36, 36);
+                    display: flex;
+                    height: 3rem;
+                    width: 22.5rem;
+                    border-radius: 2rem;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    background-image: linear-gradient(45deg, #92FFB0, #00E23F);
+                    .link-whats {
+                        color: #000000;
+                        font-size: 1.5rem;
+                        font-weight: 800;
+                        width: 19rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .title-footer {
+            color: #F2F2F2;
+            padding: 1rem 1.6rem;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-top: 4.2rem;
+        }
+        .box-social-media {
+            width: 60rem;
+            margin: 2rem 2rem;
+            height: 20rem;
+            flex-direction: column;
+            align-items: center;
+            .social-media {
+               padding: 1rem;
+            }
+        }
+        .email-footer {
+            display: flex;
+            width: 100%;
+            height: 4rem;
+            justify-content: center;
+            align-items: center;
+            .email {
+                color: white;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+    
+        }
+        .rights {
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 1.2rem;
+        }
+    }
+}
