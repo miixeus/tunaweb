@@ -111,7 +111,7 @@ a {
 }
 
 body {
-  min-width: 380px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -195,7 +195,8 @@ button {
 }
 
 #nav {
-  width: auto;
+  justify-content: end;
+  width: 100%;
 }
 
 #header .blue-link:hover {
@@ -359,10 +360,14 @@ button {
   }
 }
 #photo-case {
+  min-width: 320px;
   width: 100%;
   justify-content: center;
   z-index: 1;
-  margin-top: 4rem;
+  margin-top: 5rem;
+}
+#photo-case img {
+  min-width: 360px;
 }
 
 @media (min-width: 768px) {
@@ -1096,7 +1101,7 @@ button {
 #case .box-case .border {
   border: 1px solid rgba(66, 66, 66, 0.521);
   height: 4.78rem;
-  width: 22.5rem;
+  width: 20.5rem;
   align-items: center;
   justify-content: center;
   border-radius: 0.25rem;
@@ -1105,7 +1110,7 @@ button {
   background-color: #FFD600;
   font-weight: bold;
   height: 4rem;
-  width: 21rem;
+  width: 19rem;
   font-size: 1.3rem;
   padding: 1rem 1rem;
   text-align: center;
@@ -1338,7 +1343,7 @@ button {
   border-radius: 0.25rem;
 }
 #testimonials .box-testimonials {
-  width: 51.25rem;
+  width: 100%;
   height: 25rem;
   margin-top: 3.5rem;
   align-items: center;
@@ -1354,6 +1359,11 @@ button {
   font-size: 1.2rem;
   border-radius: 0.25rem;
   margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+#testimonials .box-testimonials .testimonials1 img {
+  width: auto;
 }
 #testimonials .box-testimonials .testimonials2 {
   background-color: #ffffff;
@@ -1364,6 +1374,9 @@ button {
   border-radius: 0.25rem;
   margin-top: 3rem;
 }
+#testimonials .box-testimonials .testimonials2 img {
+  width: auto;
+}
 #testimonials .box-testimonials .testimonials3 {
   background-color: #ffffff;
   padding: 1.5rem 1rem;
@@ -1373,6 +1386,9 @@ button {
   border-radius: 0.25rem;
   margin-top: 29rem;
   position: absolute;
+}
+#testimonials .box-testimonials .testimonials3 img {
+  width: auto;
 }
 
 @media (min-width: 768px) {

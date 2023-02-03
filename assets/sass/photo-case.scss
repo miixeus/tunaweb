@@ -1,9 +1,14 @@
 #photo-case {
+    min-width: 320px;
     width: 100%;
     justify-content: center;
     z-index: 1;
-    margin-top: 4rem;
+    margin-top: 5rem;
+    img {
+        min-width: 360px;
+    }
 }
+
 @media(min-width:768px) {
     #photo-case {
         width: 100%;
