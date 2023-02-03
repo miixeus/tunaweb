@@ -156,7 +156,7 @@
 
 @media (min-width: 768px) {
     #footer {
-        height: 70rem;
+        height: 65rem;
         .reserch {
             background-image: linear-gradient(145deg, #130a69, #4b0a80);
             width: 80%;
@@ -220,29 +220,53 @@
             font-size: 1.2rem;
             margin-top: 4.2rem;
         }
-        .box-social-media {
-            width: 60rem;
-            margin: 2rem 2rem;
-            height: 20rem;
-            flex-direction: column;
-            align-items: center;
-            .social-media {
-               padding: 1rem;
-            }
-        }
-        .email-footer {
-            display: flex;
+        .enveloped {
             width: 100%;
-            height: 4rem;
-            justify-content: center;
+            flex-direction: row;
             align-items: center;
-            .email {
-                color: white;
-                font-size: 1rem;
-                font-weight: bold;
+            .box-social-media {
+                width: 100%;
+                margin: 2rem 2rem;
+                height: 31rem;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                .social-media {
+                padding: 1rem;
+                }
+                
             }
-    
-        }
+            .information {
+                width: 100%;
+                height: 31rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+                border-left: 2px solid white;
+                .social-media-two {
+                    
+                    padding: 1rem;
+                    
+                    .email-footer {
+                        display: flex;
+                        width: 100%;
+                        height: 4rem;
+                        justify-content: center;
+                        align-items: center;
+                        .email {
+                            color: white;
+                            font-size: 1rem;
+                            font-weight: bold;
+                            
+                        }
+                
+                    }
+                }
+            }
+        }    
+
+
         .rights {
             color: white;
             font-size: 1rem;
