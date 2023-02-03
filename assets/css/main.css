@@ -114,6 +114,7 @@ body {
   min-width: 380px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 button {
@@ -188,8 +189,9 @@ button {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  box-shadow: 1px 4px 10px rgb(145, 145, 145);
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.9607843137);
 }
 
 #nav {
@@ -303,7 +305,7 @@ button {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
   }
   #header .logo {
@@ -318,8 +320,9 @@ button {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    box-shadow: 1px 4px 10px rgb(145, 145, 145);
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9607843137);
   }
   #nav {
     width: auto;
@@ -359,12 +362,14 @@ button {
   width: 100%;
   justify-content: center;
   z-index: 1;
+  margin-top: 4rem;
 }
 
 @media (min-width: 768px) {
   #photo-case {
     width: 100%;
     justify-content: center;
+    margin-top: 5rem;
     z-index: 1;
   }
   #photo-case img {
@@ -415,7 +420,7 @@ button {
   background-color: #DD1960;
   border-radius: 75px 8px 96px 8px;
   height: 33px;
-  font-weight: 500;
+  font-weight: bold;
   text-transform: uppercase;
   align-items: center;
   font-size: 14px;
@@ -426,7 +431,7 @@ button {
   background-color: #B4C538;
   border-radius: 75px 8px 96px 8px;
   height: 33px;
-  font-weight: 500;
+  font-weight: bold;
   text-transform: uppercase;
   align-items: center;
   font-size: 14px;
@@ -437,7 +442,7 @@ button {
   background-color: #17A2CD;
   border-radius: 75px 8px 96px 8px;
   height: 33px;
-  font-weight: 500;
+  font-weight: bold;
   text-transform: uppercase;
   align-items: center;
   font-size: 14px;
@@ -476,39 +481,42 @@ button {
     width: 21.5rem;
   }
   #who .box-md .flex-image .list-who {
-    width: 9.5rem;
+    width: 14.5rem;
     padding-left: 2rem;
   }
   #who .box-md .flex-image .list-who .li-one {
     background-color: #DD1960;
     border-radius: 75px 8px 96px 8px;
-    height: 33px;
+    height: 2.6rem;
     font-weight: 500;
     text-transform: uppercase;
     align-items: center;
     font-size: 14px;
+    font-weight: bold;
     justify-content: center;
     box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
   }
   #who .box-md .flex-image .list-who .li-two {
     background-color: #B4C538;
     border-radius: 75px 8px 96px 8px;
-    height: 33px;
+    height: 2.6rem;
     font-weight: 500;
     text-transform: uppercase;
     align-items: center;
     font-size: 14px;
+    font-weight: bold;
     justify-content: center;
     box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
   }
   #who .box-md .flex-image .list-who .li-three {
     background-color: #17A2CD;
     border-radius: 75px 8px 96px 8px;
-    height: 33px;
+    height: 2.6rem;
     font-weight: 500;
     text-transform: uppercase;
     align-items: center;
     font-size: 14px;
+    font-weight: bold;
     justify-content: center;
     box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
   }
@@ -697,7 +705,7 @@ button {
     margin: 10px 12px;
   }
   #details .box-md-who .button-row .button-whats {
-    margin-left: 1rem;
+    margin-left: -6rem;
     margin-top: 17rem;
     width: 3rem;
     padding: 1.6rem;
@@ -1117,6 +1125,13 @@ button {
 }
 #case .box-carousel .carousel-case1 img, #case .box-carousel .carousel-case2 img, #case .box-carousel .carousel-case3 img, #case .box-carousel .carousel-case4 img {
   border-radius: 0.5rem;
+  filter: grayscale(1);
+  transition: all 0.3s;
+}
+#case .box-carousel .carousel-case1 img:hover, #case .box-carousel .carousel-case2 img:hover, #case .box-carousel .carousel-case3 img:hover, #case .box-carousel .carousel-case4 img:hover {
+  filter: grayscale(0);
+  box-shadow: 2px 4px 10px rgb(77, 77, 77);
+  transition: all 0.2s;
 }
 #case .box-md-case {
   display: flex;
@@ -1155,6 +1170,7 @@ button {
   width: 100%;
   margin-top: 3rem;
   justify-content: center;
+  transition: all 0.3s;
 }
 #case .box-md-case .button-row .button-whats {
   display: flex;
@@ -1177,6 +1193,11 @@ button {
   justify-content: center;
   align-items: center;
 }
+#case .box-md-case .button-row:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
 @media (min-width: 768px) {
   #case {
     width: auto;
@@ -1241,7 +1262,7 @@ button {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 1rem;
-    border-top: 1px solid #080808;
+    border-top: 1px solid #5f5f5f;
   }
   #case .box-md-case .background-soluctions {
     background: none;
@@ -1255,6 +1276,7 @@ button {
   }
   #case .box-md-case .background-soluctions .paragraph-soluction {
     width: auto;
+    border-left: 1px solid #5f5f5f;
     color: rgb(255, 255, 255);
     flex-direction: column;
     align-items: center;
@@ -1270,7 +1292,7 @@ button {
   }
   #case .box-md-case .button-row {
     width: 100%;
-    margin-top: 3rem;
+    margin: 3rem;
     align-items: center;
     justify-content: center;
   }
@@ -1449,6 +1471,7 @@ button {
   width: 100%;
   margin: 1rem;
   justify-content: center;
+  transition: all 0.3s;
 }
 #footer .reserch .button-row .button-whats {
   display: flex;
@@ -1470,6 +1493,10 @@ button {
   justify-content: center;
   align-items: center;
 }
+#footer .reserch .button-row:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
 #footer .title-footer {
   color: #F2F2F2;
   padding: 1rem 1.6rem;
@@ -1485,6 +1512,43 @@ button {
 }
 #footer .box-social-media .social-media {
   padding: 1rem;
+}
+#footer .box-social-media .social-media .instagram {
+  background-image: url(/assets/images/instagram.png);
+  transition: all 0.3s;
+  width: 4rem;
+  height: 4rem;
+}
+#footer .box-social-media .social-media .instagram:hover {
+  background-image: url(/assets/images/instagram-color.png);
+  transition: all 0.3s;
+}
+#footer .box-social-media .social-media .facebook {
+  background-image: url(/assets/images/facebook-white.png);
+  transition: all 0.3s;
+  width: 4rem;
+  height: 4rem;
+}
+#footer .box-social-media .social-media .facebook:hover {
+  background-image: url(/assets/images/facebook-blue.png);
+  transition: all 0.4s;
+}
+#footer .box-social-media .social-media .linkedin {
+  background-image: url(/assets/images/linkedin.png);
+  transition: all 0.3s;
+  width: 4rem;
+  height: 4rem;
+}
+#footer .box-social-media .social-media .linkedin:hover {
+  background-image: url(/assets/images/linkedin-hover.png);
+  transition: all 0.4s;
+}
+#footer .box-social-media .social-media .card-white {
+  transition: all 0.3s;
+}
+#footer .box-social-media .social-media .card-white:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
 }
 #footer .email-footer {
   display: flex;

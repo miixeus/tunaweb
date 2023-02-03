@@ -2,11 +2,13 @@
     width: 100%;
     justify-content: center;
     z-index: 1;
+    margin-top: 4rem;
 }
 @media(min-width:768px) {
     #photo-case {
         width: 100%;
         justify-content: center;
+        margin-top: 5rem;
         z-index: 1;
         img {
             height: 670px;

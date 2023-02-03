@@ -39,6 +39,7 @@
             width: 100%;
             margin: 1rem; 
             justify-content: center;
+            transition: all 0.3s;
             .button-whats {
                 display: flex;
                 height: 42px;
@@ -60,6 +61,10 @@
                 }
             }
         }
+        .button-row:hover {
+            transform: scale(1.2);
+            transition: all 0.3s;
+        }
     }
     .title-footer {
         color: #F2F2F2;
@@ -75,7 +80,57 @@
         align-items: center;
         .social-media {
            padding: 1rem;
+           .instagram {
+            background-image: url(/assets/images/instagram.png);
+            transition: all 0.3s;
+            width: 4rem;
+            height: 4rem;
+            
+            
+           }
+           .instagram:hover {
+            background-image: url(/assets/images/instagram-color.png);
+            transition: all 0.3s;
+            
+            
+           }
+           .facebook {
+            background-image: url(/assets/images/facebook-white.png);
+            transition: all 0.3s;
+            width: 4rem;
+            height: 4rem;
+            
+            
+           }
+           .facebook:hover {
+            background-image: url(/assets/images/facebook-blue.png);
+            transition: all 0.4s;
+            
+            
+           }
+           .linkedin {
+            background-image: url(/assets/images/linkedin.png);
+            transition: all 0.3s;
+            width: 4rem;
+            height: 4rem;
+            
+            
+           }
+           .linkedin:hover {
+            background-image: url(/assets/images/linkedin-hover.png);
+            transition: all 0.4s;
+           
+            
+           }
+           .card-white {
+            transition: all 0.3s;
+           }
+           .card-white:hover {
+            transform: scale(1.2);
+            transition: all 0.3s;
+           }
         }
+
     }
     .email-footer {
         display: flex;
