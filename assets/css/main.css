@@ -111,7 +111,6 @@ a {
 }
 
 body {
-  min-width: 320px;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -158,6 +157,7 @@ button {
   }
 }
 .nav {
+  min-width: 320px;
   width: 100%;
   height: 111px;
 }
@@ -185,6 +185,7 @@ button {
 }
 
 #header {
+  min-width: 320px;
   display: flex;
   width: 100%;
   align-items: center;
@@ -367,7 +368,7 @@ button {
   margin-top: 5rem;
 }
 #photo-case img {
-  min-width: 360px;
+  min-width: 320px;
 }
 
 @media (min-width: 768px) {
@@ -527,6 +528,7 @@ button {
   }
 }
 #details {
+  min-width: 320px;
   height: 48.75rem;
   display: flex;
   flex-direction: column;
@@ -556,8 +558,10 @@ button {
   bottom: -38px;
   opacity: 0.1;
   position: absolute;
-  width: 100%;
   z-index: 0;
+}
+#details .box-md-who .img-who img {
+  width: 19rem;
 }
 #details .box-md-who .flex-text {
   height: 563px;
@@ -727,6 +731,8 @@ button {
   }
 }
 #our-service {
+  min-width: 320px;
+  width: 100%;
   height: 2042px;
   background-image: linear-gradient(145deg, #004968, #081E17);
   clip-path: polygon(0% 1%, 100% 2%, 100% 100%, 0 100%);
@@ -736,7 +742,7 @@ button {
   box-shadow: 1px 2px 3px black;
 }
 #our-service .title {
-  width: auto;
+  width: 100%;
   height: 64px;
   margin-top: 50px;
   font-size: 0.85rem;
@@ -751,7 +757,7 @@ button {
   flex-direction: column;
 }
 #our-service .box-md-service .box-container {
-  width: auto;
+  width: 100%;
   height: 306px;
   flex-direction: column;
   justify-content: center;
@@ -775,7 +781,7 @@ button {
   z-index: 2;
 }
 #our-service .box-md-service .box-video {
-  width: 350px;
+  width: 320px;
   height: 188px;
   justify-content: center;
   align-items: center;
@@ -806,7 +812,7 @@ button {
   flex-direction: column;
 }
 #our-service .box-md-service-two .box-container-two {
-  width: auto;
+  width: 100%;
   height: 30rem;
   margin-top: 6rem;
   flex-direction: column;
@@ -849,7 +855,7 @@ button {
   flex-direction: column;
 }
 #our-service .box-md-service-dev .box-container-dev {
-  width: auto;
+  width: 100%;
   height: 20rem;
   margin-top: 7rem;
   flex-direction: column;
@@ -871,8 +877,8 @@ button {
   z-index: 2;
 }
 #our-service .box-md-service-dev .box-img {
-  width: 350px;
-  height: 400px;
+  width: 320px;
+  height: 380px;
   justify-content: center;
   align-items: center;
   margin-top: -0.4rem;
@@ -885,9 +891,11 @@ button {
   position: relative;
 }
 #our-service .box-md-service-dev .paragraph-dev {
+  width: 100%;
   color: rgb(255, 255, 255);
   height: 160px;
   margin-top: 5rem;
+  padding: 1rem;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -907,7 +915,7 @@ button {
 
 @media (min-width: 768px) {
   #our-service .title {
-    width: auto;
+    width: 100%;
     height: 64px;
     margin-top: 3.25rem;
     font-size: 1.2rem;
@@ -970,7 +978,7 @@ button {
     margin: 4rem 2rem;
   }
   #our-service .box-md-service-two .box-container-two {
-    width: auto;
+    width: 100%;
     height: 30rem;
     margin-top: 6rem;
     flex-direction: column;
@@ -1085,7 +1093,8 @@ button {
 }
 
 #case {
-  width: auto;
+  min-width: 320px;
+  width: 100%;
   height: 130rem;
   background-image: linear-gradient(145deg, #aaaaaa, #686767);
   flex-direction: column;
@@ -1147,7 +1156,7 @@ button {
   padding: 0.2rem;
   justify-content: center;
   align-items: center;
-  width: 21.875rem;
+  width: 100%;
   height: 18.1875rem;
   margin-top: 5rem;
   border-radius: 0.5rem;
@@ -1205,7 +1214,7 @@ button {
 
 @media (min-width: 768px) {
   #case {
-    width: auto;
+    width: 100%;
     height: 70rem;
   }
   #case .box-case {
@@ -1328,8 +1337,9 @@ button {
   }
 }
 #testimonials {
-  width: auto;
-  height: 55.12rem;
+  min-width: 320px;
+  width: 100%;
+  height: 56.12rem;
   background-color: #0A304A;
   align-items: center;
   flex-direction: column;
@@ -1363,7 +1373,7 @@ button {
   align-items: center;
 }
 #testimonials .box-testimonials .testimonials1 img {
-  width: auto;
+  width: 100%;
 }
 #testimonials .box-testimonials .testimonials2 {
   background-color: #ffffff;
@@ -1375,7 +1385,7 @@ button {
   margin-top: 3rem;
 }
 #testimonials .box-testimonials .testimonials2 img {
-  width: auto;
+  width: 100%;
 }
 #testimonials .box-testimonials .testimonials3 {
   background-color: #ffffff;
@@ -1388,7 +1398,7 @@ button {
   position: absolute;
 }
 #testimonials .box-testimonials .testimonials3 img {
-  width: auto;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -1445,16 +1455,17 @@ button {
   }
 }
 #footer {
+  min-width: 320px;
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   height: 60rem;
   background-image: linear-gradient(#0A304A, #000000);
   align-items: center;
 }
 #footer .reserch {
-  background-image: linear-gradient(#F1F1F1, #FFFFFF);
-  width: 23.12rem;
+  background-image: linear-gradient(145deg, #130a69, #4b0a80);
+  width: 20.12rem;
   height: 12.5rem;
   margin-top: 5rem;
   display: flex;
@@ -1464,8 +1475,8 @@ button {
   align-items: center;
 }
 #footer .reserch .paragraph-footer {
-  width: auto;
-  color: rgb(0, 0, 0);
+  width: 100%;
+  color: rgb(255, 255, 255);
   height: 104px;
   flex-direction: column;
   align-items: center;

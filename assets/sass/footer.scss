@@ -1,13 +1,14 @@
 #footer {
+    min-width: 320px;
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 100%;
     height: 60rem;
     background-image: linear-gradient( #0A304A, #000000);
     align-items: center;
     .reserch {
-        background-image: linear-gradient(#F1F1F1, #FFFFFF);
-        width: 23.12rem;
+        background-image: linear-gradient(145deg, #130a69, #4b0a80);
+        width: 20.12rem;
         height: 12.5rem;
         margin-top: 5rem;
         display: flex;
@@ -16,8 +17,8 @@
         justify-content: center;
         align-items: center;
         .paragraph-footer {
-            width: auto;
-            color: rgb(0, 0, 0);
+            width: 100%;
+            color: rgb(255, 255, 255);
             height: 104px;
             flex-direction: column;
             align-items: center;
