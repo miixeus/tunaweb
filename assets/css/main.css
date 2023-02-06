@@ -565,6 +565,9 @@ button {
   position: relative;
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(145deg, #004968, #081E17);
+  border-radius: 0.5rem;
+  box-shadow: 1px 3px 6px rgb(73, 73, 73);
 }
 #details .box-md-who .img-who {
   bottom: -38px;
@@ -582,11 +585,13 @@ button {
 }
 #details .box-md-who .flex-text .div-tnb {
   margin: 30px 31px;
-  color: #707070;
+  color: #ffffff;
   font-size: 17px;
 }
 #details .box-md-who .flex-text .div-tnb span {
-  color: black;
+  background-color: white;
+  padding: 0rem 0.3rem;
+  color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: bold;
 }
@@ -597,26 +602,26 @@ button {
 }
 #details .box-md-who .flex-text .div-net {
   margin: 30px 31px;
-  color: #000000;
+  color: #ffffff;
   font-size: 18px;
   flex-direction: column;
 }
 #details .box-md-who .flex-text .div-net .div-want {
   font-size: 16px;
   font-weight: normal;
-  color: #707070;
+  color: #c7c7c7;
   margin: 10px 12px;
 }
 #details .box-md-who .flex-text .div-ofr {
   margin: 30px 31px;
-  color: #000000;
+  color: #ffffff;
   font-size: 18px;
   flex-direction: column;
 }
 #details .box-md-who .flex-text .div-ofr .div-want {
   font-size: 16px;
   font-weight: normal;
-  color: #707070;
+  color: #c7c7c7;
   margin: 10px 12px;
 }
 #details .box-md-who .button-row {
@@ -674,6 +679,7 @@ button {
     margin: 0rem 2rem;
     flex-direction: row-reverse;
     align-items: center;
+    box-shadow: 1px 3px 6px rgb(73, 73, 73);
   }
   #details .box-md-who .img-who {
     width: 20rem;
@@ -688,13 +694,15 @@ button {
   }
   #details .box-md-who .flex-text .div-tnb {
     margin: 30px 31px;
-    color: #707070;
+    color: #ffffff;
     font-size: 17px;
   }
   #details .box-md-who .flex-text .div-tnb span {
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: bold;
+    background-color: white;
+    padding: 0rem 0.3rem;
   }
   #details .box-md-who .flex-text .line {
     height: 1px;
@@ -703,26 +711,26 @@ button {
   }
   #details .box-md-who .flex-text .div-net {
     margin: 30px 31px;
-    color: #000000;
+    color: #ffffff;
     font-size: 18px;
     flex-direction: column;
   }
   #details .box-md-who .flex-text .div-net .div-want {
     font-size: 16px;
     font-weight: normal;
-    color: #707070;
+    color: #c7c7c7;
     margin: 10px 12px;
   }
   #details .box-md-who .flex-text .div-ofr {
     margin: 30px 31px;
-    color: #000000;
+    color: #ffffff;
     font-size: 18px;
     flex-direction: column;
   }
   #details .box-md-who .flex-text .div-ofr .div-want {
     font-size: 16px;
     font-weight: normal;
-    color: #707070;
+    color: #c7c7c7;
     margin: 10px 12px;
   }
   #details .box-md-who .button-row .button-whats {

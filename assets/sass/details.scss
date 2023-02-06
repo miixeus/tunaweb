@@ -24,6 +24,9 @@
         position: relative;
         display: flex;
         flex-direction: column;
+        background-image: linear-gradient(145deg, #004968, #081E17);
+        border-radius: .5rem;
+        box-shadow: 1px 3px 6px rgb(73, 73, 73);
         .img-who {
             bottom: -38px;
             opacity: 0.1;
@@ -39,10 +42,12 @@
             z-index: 1;
             .div-tnb {
                 margin: 30px 31px;
-                color: #707070;
+                color: #ffffff;
                 font-size: 17px;
                 span {
-                    color: black;
+                    background-color: white;
+                    padding: 0rem .3rem;
+                    color: rgb(0, 0, 0);
                     font-size: 20px;
                     font-weight: bold;
                 }
@@ -54,25 +59,25 @@
             }
             .div-net {
                 margin: 30px 31px;
-                color: #000000;
+                color: #ffffff;
                 font-size: 18px;
                 flex-direction: column;
                 .div-want {
                     font-size: 16px;
                     font-weight: normal;
-                    color: #707070;
+                    color: #c7c7c7;
                     margin: 10px 12px;
                 }
             }
             .div-ofr {
                 margin: 30px 31px;
-                color: #000000;
+                color: #ffffff;
                 font-size: 18px;
                 flex-direction: column;
                 .div-want {
                     font-size: 16px;
                     font-weight: normal;
-                    color: #707070;
+                    color: #c7c7c7;
                     margin: 10px 12px;
         
                 }
@@ -141,7 +146,7 @@
             margin: 0rem 2rem;
             flex-direction: row-reverse;
             align-items: center;
-
+            box-shadow: 1px 3px 6px rgb(73, 73, 73);
             .img-who {
                 width: 20rem;
                 bottom: -38px;
@@ -156,12 +161,14 @@
                 
                 .div-tnb {
                     margin: 30px 31px;
-                    color: #707070;
+                    color: #ffffff;
                     font-size: 17px;
                     span {
-                        color: black;
+                        color: rgb(0, 0, 0);
                         font-size: 20px;
                         font-weight: bold;
+                        background-color: white;
+                        padding: 0rem .3rem;
                     }
                 }
                 .line {
@@ -171,25 +178,25 @@
                 }
                 .div-net {
                     margin: 30px 31px;
-                    color: #000000;
+                    color: #ffffff;
                     font-size: 18px;
                     flex-direction: column;
                     .div-want {
                         font-size: 16px;
                         font-weight: normal;
-                        color: #707070;
+                        color: #c7c7c7;
                         margin: 10px 12px;
                     }
                 }
                 .div-ofr {
                     margin: 30px 31px;
-                    color: #000000;
+                    color: #ffffff;
                     font-size: 18px;
                     flex-direction: column;
                     .div-want {
                         font-size: 16px;
                         font-weight: normal;
-                        color: #707070;
+                        color: #c7c7c7;
                         margin: 10px 12px;
             
                     }
