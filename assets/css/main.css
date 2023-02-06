@@ -360,6 +360,18 @@ button {
     border-radius: 6px;
   }
 }
+@media (min-width: 940px) {
+  #header a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
 #photo-case {
   min-width: 320px;
   width: 100%;
@@ -1135,15 +1147,19 @@ button {
   }
   #our-service .box-md-service-two {
     display: flex;
+    border-radius: 1rem;
+    background-image: linear-gradient(145deg, #004968, #081E17);
+    box-shadow: 1px 3px 9px black;
     flex-direction: row;
     align-items: center;
+    padding: 0.8rem;
     width: 55rem;
     margin: 4rem 2rem;
   }
   #our-service .box-md-service-two .box-container-two {
     width: 20rem;
     height: 30rem;
-    margin-top: 6rem;
+    margin-top: 1rem;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
