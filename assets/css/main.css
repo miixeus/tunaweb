@@ -546,9 +546,6 @@ button {
   flex-direction: column;
 }
 #details .ask-one {
-  background-image: url(../images/rabisco.png);
-  background-repeat: no-repeat;
-  background-position: center;
   width: 100%;
   height: 83px;
   justify-content: center;
@@ -557,8 +554,8 @@ button {
   z-index: 1;
 }
 #details .ask-one h2 {
-  color: white;
-  font-size: 16px;
+  color: rgb(31, 31, 31);
+  font-size: 2rem;
   font-weight: bold;
 }
 #details .box-md-who {
@@ -660,9 +657,6 @@ button {
     align-items: center;
   }
   #details .ask-one {
-    background-image: url(../images/rabisco.png);
-    background-repeat: no-repeat;
-    background-position: center;
     width: 100%;
     height: 103px;
     justify-content: center;
@@ -670,8 +664,8 @@ button {
     align-items: center;
   }
   #details .ask-one h2 {
-    color: white;
-    font-size: 1.25rem;
+    color: rgb(34, 34, 34);
+    font-size: 3.2rem;
     font-weight: bold;
   }
   #details .box-md-who {
@@ -1100,7 +1094,7 @@ button {
     width: 100%;
     height: 64px;
     margin-top: 3.25rem;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -1290,7 +1284,7 @@ button {
   min-width: 320px;
   width: 100%;
   height: 130rem;
-  background-image: linear-gradient(145deg, #aaaaaa, #686767);
+  background-image: linear-gradient(145deg, #272727, #0c0b0b);
   flex-direction: column;
   align-items: center;
 }
@@ -1302,7 +1296,7 @@ button {
   align-items: center;
 }
 #case .box-case .border {
-  border: 1px solid rgba(66, 66, 66, 0.521);
+  border: 1px solid rgba(228, 228, 228, 0.521);
   height: 4.78rem;
   width: 20.5rem;
   align-items: center;
@@ -1310,7 +1304,9 @@ button {
   border-radius: 0.25rem;
 }
 #case .box-case .border .title-case {
-  background-color: #FFD600;
+  border: 1px solid rgba(228, 228, 228, 0.521);
+  color: white;
+  background-image: linear-gradient(145deg, #130a69, #4b0a80);
   font-weight: bold;
   height: 4rem;
   width: 19rem;
@@ -1334,16 +1330,19 @@ button {
 #case .box-carousel .carousel-case1 img, #case .box-carousel .carousel-case2 img, #case .box-carousel .carousel-case3 img, #case .box-carousel .carousel-case4 img {
   border-radius: 0.5rem;
   filter: grayscale(1);
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 #case .box-carousel .carousel-case1 img:hover, #case .box-carousel .carousel-case2 img:hover, #case .box-carousel .carousel-case3 img:hover, #case .box-carousel .carousel-case4 img:hover {
   filter: grayscale(0);
-  box-shadow: 2px 4px 10px rgb(77, 77, 77);
-  transition: all 0.2s;
+  box-shadow: 2px 4px 10px 11px rgb(36, 36, 36);
+  transition: all 0.1s;
+  transform: scale(1rem);
 }
 #case .box-md-case {
+  background-image: linear-gradient(145deg, #333333, #201e1e);
   display: flex;
   flex-direction: column;
+  height: 31rem;
 }
 #case .box-md-case .background-soluctions {
   display: flex;
@@ -1378,11 +1377,11 @@ button {
   width: 100%;
   margin-top: 3rem;
   justify-content: center;
-  transition: all 0.3s;
 }
 #case .box-md-case .button-row .button-whats {
+  transition: all 0.3s;
   display: flex;
-  height: 42px;
+  height: 2.62rem;
   width: 15.22rem;
   border-radius: 20px;
   flex-direction: row;
@@ -1401,7 +1400,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-#case .box-md-case .button-row:hover {
+#case .box-md-case .button-whats:hover {
   transform: scale(1.2);
   transition: all 0.3s;
 }
@@ -1417,7 +1416,6 @@ button {
     margin: 2rem 2rem;
   }
   #case .box-case .border {
-    border: 1px solid rgba(66, 66, 66, 0.521);
     height: 5rem;
     width: 45rem;
     align-items: center;
@@ -1465,7 +1463,76 @@ button {
     border-radius: 0.5rem;
   }
   #case .box-md-case {
-    width: 60rem;
+    width: 80%;
+    margin: 2rem 2rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 1rem;
+    border-top: 1px solid #000000;
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px 1px #38c771;
+  }
+  #case .box-md-case .background-soluctions {
+    background: none;
+    display: flex;
+    padding: 0.4rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 18rem;
+    margin-top: 1rem;
+  }
+  #case .box-md-case .background-soluctions .paragraph-soluction {
+    width: auto;
+    border-left: 1px solid #5f5f5f;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  #case .box-md-case .background-soluctions .paragraph-soluction .light {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+  #case .box-md-case .button-row {
+    width: 100%;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  #case .box-md-case .button-row .button-whats {
+    display: flex;
+    height: 3rem;
+    width: 18rem;
+    border-radius: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 1px 2px 6px rgb(31, 31, 31);
+    background-image: linear-gradient(45deg, #92FFB0, #00E23F);
+  }
+  #case .box-md-case .button-row .button-whats .link-whats {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 800;
+    width: 15.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #case .box-md-case .button-row .button-whats .link-whats .box-img-whats {
+    width: 2rem;
+    height: 1rem;
+  }
+}
+@media (min-width: 960px) {
+  #case .box-md-case {
+    width: 80%;
     margin: 2rem 2rem;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -1475,12 +1542,12 @@ button {
   #case .box-md-case .background-soluctions {
     background: none;
     display: flex;
-    padding: 0.2rem;
+    padding: 0.4rem;
     justify-content: center;
     align-items: center;
-    width: 100rem;
-    height: 14rem;
-    margin-top: 5rem;
+    width: 100%;
+    height: 18rem;
+    margin-top: 1rem;
   }
   #case .box-md-case .background-soluctions .paragraph-soluction {
     width: auto;
@@ -1491,43 +1558,12 @@ button {
     justify-content: space-around;
     text-align: center;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
   }
   #case .box-md-case .background-soluctions .paragraph-soluction .light {
     color: #ffffff;
     font-size: 1.1rem;
     font-weight: 300;
-  }
-  #case .box-md-case .button-row {
-    width: 100%;
-    margin: 3rem;
-    align-items: center;
-    justify-content: center;
-  }
-  #case .box-md-case .button-row .button-whats {
-    display: flex;
-    height: 4rem;
-    width: 22rem;
-    border-radius: 40px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    box-shadow: 1px 2px 6px rgb(31, 31, 31);
-    background-image: linear-gradient(45deg, #92FFB0, #00E23F);
-  }
-  #case .box-md-case .button-row .button-whats .link-whats {
-    color: #000000;
-    font-size: 1.1rem;
-    font-weight: 800;
-    width: 17.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #case .box-md-case .button-row .button-whats .link-whats .box-img-whats {
-    width: 2rem;
-    height: 1rem;
   }
 }
 #testimonials {
@@ -1804,8 +1840,9 @@ button {
   #footer .reserch {
     background-image: linear-gradient(145deg, #130a69, #4b0a80);
     width: 80%;
-    height: 16.5rem;
-    box-shadow: 1px 2px 6px rgb(36, 36, 36);
+    height: 17rem;
+    padding: 2rem 1.5rem;
+    box-shadow: 1px 2px 6px rgb(0, 0, 0);
   }
   #footer .reserch .paragraph-footer {
     width: auto;
