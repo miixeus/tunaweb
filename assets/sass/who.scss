@@ -29,7 +29,11 @@
             justify-content: space-around;
             margin-top: 5rem;
             position: relative;
-
+            img {
+                background-color: white;
+                border-radius: 50%;
+                box-shadow: 1px 7px 8px black;
+            }
             .list-who {
                 position: relative;
                 display: flex;
@@ -76,7 +80,7 @@
 }
 @media(min-width:768px) {
     #who {
-        margin-top: -30.25rem;
+        margin-top: -35.25rem;
         flex-direction: row;
         justify-content: center;
         .box-md{
@@ -103,7 +107,6 @@
                 justify-content: space-between;
                 position: relative;
                 width: 21.5rem;
-        
                 .list-who {
                     width: 14.5rem;
                     padding-left: 2rem;

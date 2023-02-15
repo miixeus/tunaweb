@@ -322,9 +322,11 @@ button {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    z-index: 1000;
     background-color: rgba(255, 255, 255, 0.9607843137);
+    transition: all 0.6s;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
   }
   #nav {
     width: auto;
@@ -390,9 +392,6 @@ button {
     margin-top: 5rem;
     z-index: 1;
   }
-  #photo-case img {
-    height: 670px;
-  }
 }
 #who {
   display: flex;
@@ -425,6 +424,11 @@ button {
   justify-content: space-around;
   margin-top: 5rem;
   position: relative;
+}
+#who .box-md .flex-image img {
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 1px 7px 8px black;
 }
 #who .box-md .flex-image .list-who {
   position: relative;
@@ -470,7 +474,7 @@ button {
 
 @media (min-width: 768px) {
   #who {
-    margin-top: -30.25rem;
+    margin-top: -35.25rem;
     flex-direction: row;
     justify-content: center;
   }
@@ -1035,7 +1039,7 @@ button {
     display: flex;
     flex-direction: row-reverse;
     background-image: linear-gradient(145deg, #004968, #081E17);
-    border-radius: 90% 20% 32% 37%;
+    border-radius: 0.5rem;
     width: 43rem;
     margin: 4rem 2rem;
   }
@@ -1048,9 +1052,9 @@ button {
     align-items: center;
   }
   #our-service .box-md-service-dev .box-container-dev .container-title-dev {
-    width: 273px;
+    width: 295px;
     height: 100px;
-    margin-left: 2rem;
+    margin-left: 1rem;
     justify-content: flex-start;
     align-items: flex-start;
     font-size: 2rem;
@@ -1207,7 +1211,6 @@ button {
     display: flex;
     flex-direction: row-reverse;
     background-image: linear-gradient(145deg, #004968, #081E17);
-    border-radius: 90% 20% 32% 37%;
     width: 60rem;
     margin: 4rem 2rem;
   }
@@ -1835,7 +1838,7 @@ button {
 
 @media (min-width: 768px) {
   #footer {
-    height: 65rem;
+    height: 70rem;
   }
   #footer .reserch {
     background-image: linear-gradient(145deg, #130a69, #4b0a80);
