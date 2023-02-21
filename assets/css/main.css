@@ -114,6 +114,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  min-width: 320px;
 }
 
 button {
@@ -193,6 +194,7 @@ button {
   position: fixed;
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0.9607843137);
+  box-shadow: 1px 3px 12px black;
 }
 
 #nav {
@@ -379,7 +381,7 @@ button {
   width: 100%;
   justify-content: center;
   z-index: 1;
-  margin-top: 5rem;
+  margin-top: 5.3rem;
 }
 #photo-case img {
   min-width: 320px;
@@ -1816,6 +1818,17 @@ button {
 #footer .enveloped .information {
   flex-direction: column;
   align-items: center;
+}
+#footer .enveloped .information .social-media-two .card-white {
+  animation: all 0.1s;
+}
+#footer .enveloped .information .social-media-two .card-white:hover {
+  animation: all 0.1s;
+  transform: scale(1);
+}
+#footer .enveloped .information .card-white:hover {
+  animation: all 0.1s;
+  transform: scale(1);
 }
 #footer .enveloped .information .email-footer {
   display: flex;
