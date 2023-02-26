@@ -2,7 +2,7 @@
     min-width: 320px;
     width: 100%;
     height: 130rem;
-    background-image: linear-gradient(145deg, #272727, #0c0b0b);
+    background-image: linear-gradient(145deg, #12021e, #0a304a);
     flex-direction: column;
     align-items: center;
     .box-case{
@@ -50,7 +50,7 @@
             }
             img:hover {
                 filter: grayscale(0);
-                box-shadow: (2px 4px 10px 11px rgb(36, 36, 36));
+                box-shadow: (2px 4px 10px rgb(0, 0, 0));
                 transition: all 0.1s;
                 transform: scale(1rem);
             }
