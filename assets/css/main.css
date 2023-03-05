@@ -680,7 +680,6 @@ button {
     font-weight: bold;
   }
   #details .box-md-who {
-    width: 60rem;
     margin: 0rem 2rem;
     flex-direction: row-reverse;
     align-items: center;
@@ -967,6 +966,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 6rem;
   }
   #our-service .box-md-service .box-title {
     align-items: flex-start;
@@ -1007,7 +1007,7 @@ button {
     flex-direction: row;
     align-items: center;
     width: 40rem;
-    margin: 4rem 2rem;
+    margin: 0 2rem;
   }
   #our-service .box-md-service-two .box-container-two {
     width: 100%;
@@ -1065,7 +1065,7 @@ button {
     align-items: center;
   }
   #our-service .box-md-service-dev .box-container-dev .container-title-dev {
-    width: 295px;
+    width: 367px;
     height: 100px;
     margin-left: 1rem;
     justify-content: flex-start;
@@ -1239,6 +1239,7 @@ button {
     width: 30rem;
     height: 100px;
     margin-left: 2rem;
+    margin-top: 2rem;
     justify-content: flex-start;
     align-items: flex-start;
     font-size: 2.2rem;
@@ -1429,7 +1430,7 @@ button {
   }
   #case .box-case {
     height: 4rem;
-    width: 60rem;
+    width: 100%;
     margin: 2rem 2rem;
   }
   #case .box-case .border {
