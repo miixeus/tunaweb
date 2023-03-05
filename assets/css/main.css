@@ -758,7 +758,8 @@ button {
 #our-service {
   min-width: 320px;
   width: 100%;
-  height: 2040px;
+  height: 2042px;
+  overflow: hidden;
   background-image: linear-gradient(145deg, #004968, #081E17);
   clip-path: polygon(0% 1%, 100% 2%, 100% 100%, 0 100%);
   display: flex;
@@ -789,7 +790,7 @@ button {
   align-items: center;
 }
 #our-service .box-md-service .box-title {
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
 }
 #our-service .box-md-service .container-title {
@@ -804,6 +805,8 @@ button {
 }
 #our-service .box-md-service .arrow {
   z-index: 2;
+  margin-left: 15rem;
+  height: 8rem;
 }
 #our-service .box-md-service .box-video {
   width: 320px;
@@ -839,7 +842,7 @@ button {
 #our-service .box-md-service-two .box-container-two {
   width: 100%;
   height: 30rem;
-  margin-top: 6rem;
+  margin-top: 3rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -848,15 +851,17 @@ button {
   color: #ffffff;
   width: 273px;
   height: 100px;
-  margin-left: 2rem;
+  margin-left: 1rem;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: bold;
 }
 #our-service .box-md-service-two .box-container-two .arrow-two {
-  margin-top: 2.2rem;
   z-index: 2;
+  margin-left: -4rem;
+  margin-top: 2rem;
+  height: 6rem;
 }
 #our-service .box-md-service-two .paragraph {
   color: white;
@@ -891,14 +896,15 @@ button {
   color: #ffffff;
   width: 273px;
   height: 100px;
-  margin-left: 2rem;
+  margin-left: 1rem;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
-#our-service .box-md-service-dev .box-container-dev .arrow-two {
-  margin-top: 2.2rem;
+#our-service .box-md-service-dev .box-container-dev .arrow-three {
+  margin-top: 2rem;
+  margin-left: -4rem;
   z-index: 2;
 }
 #our-service .box-md-service-dev .box-img {
@@ -1338,6 +1344,7 @@ button {
   padding: 2rem 0;
 }
 #case .box-carousel .carousel-case1 img, #case .box-carousel .carousel-case2 img, #case .box-carousel .carousel-case3 img, #case .box-carousel .carousel-case4 img {
+  max-width: 100%;
   border-radius: 0.5rem;
   filter: grayscale(1);
   transition: all 0.1s;
@@ -1583,6 +1590,7 @@ button {
   background-color: #0A304A;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 #testimonials .title-testimonials {
   margin-top: 5rem;
