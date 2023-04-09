@@ -22,3 +22,14 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 let currentYear = new Date().getFullYear();
 let footerYear = document.getElementById("footer-year");
 footerYear.innerHTML = currentYear;
+
+let popup = document.getElementById("meu-popup");
+
+// adicionar evento de clique na janela inteira
+window.addEventListener("click", function(event) {
+  // verificar se o clique foi fora do pop-up
+  if (event.target != popup && !popup.contains(event.target)) {
+    // esconder o pop-up
+    popup.style.display = "none";
+  }
+});

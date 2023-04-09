@@ -1,299 +1,286 @@
 #footer {
-    min-width: 320px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60rem;
+  background-image: linear-gradient(#222222, #000000);
+  align-items: center;
+  .reserch {
+    background-image: linear-gradient(145deg, #616161, #555555);
+    box-shadow: 1px 1px 1px #38c771;
+    width: 20.12rem;
+    height: 12.5rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 60rem;
-    background-image: linear-gradient( #0A304A, #000000);
+    border-radius: 0.5rem;
+    justify-content: center;
     align-items: center;
-    .reserch {
-        background-image: linear-gradient(145deg, #130a69, #4b0a80);
-        width: 20.12rem;
-        height: 12.5rem;
-        margin-top: 5rem;
+    .paragraph-footer {
+      width: 100%;
+      color: rgb(255, 255, 255);
+      height: 104px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 0.2rem;
+      .tight {
+        font-weight: 500;
+        padding: 0.2rem;
+      }
+      .tunaweb {
+        font-size: 1.12rem;
+        font-weight: bold;
+        font-weight: 800;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        background-color: white;
+        color: rgb(9, 27, 107);
+        text-transform: uppercase;
+      }
+    }
+    .button-row {
+      width: 100%;
+      margin: 1rem;
+      justify-content: center;
+      transition: all 0.3s;
+      .button-whats {
         display: flex;
-        flex-direction: column;
-        border-radius: 0.5rem;
+        height: 42px;
+        width: 242px;
+        border-radius: 20px;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        .paragraph-footer {
-            width: 100%;
-            color: rgb(255, 255, 255);
-            height: 104px;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            text-align: center;
-            font-size: 0.9rem;
-            padding: 0.2rem;
-            .tight {
-                font-weight: 500;
-                padding: .2rem;
-            }
-            .tunaweb {
-                font-size: 1.12rem;
-                font-weight: bold;
-                text-transform: uppercase;
-            }
+        text-decoration: none;
+        background-image: linear-gradient(45deg, #92ffb0, #00e23f);
+        .link-whats {
+          color: #000000;
+          font-size: 12px;
+          font-weight: 800;
+          width: 195px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
-        .button-row{
-            width: 100%;
-            margin: 1rem; 
-            justify-content: center;
-            transition: all 0.3s;
-            .button-whats {
-                display: flex;
-                height: 42px;
-                width: 242px;
-                border-radius: 20px;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                text-decoration: none;
-                background-image: linear-gradient(45deg, #92FFB0, #00E23F);
-                .link-whats {
-                    color: #000000;
-                    font-size: 12px;
-                    font-weight: 800;
-                    width: 195px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-        }
-        .button-row:hover {
-            transform: scale(1.2);
-            transition: all 0.3s;
-        }
+      }
     }
-    .title-footer {
-        color: #F2F2F2;
-        padding: 1rem 1.6rem;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        margin-top: 4.2rem;
+    .button-row:hover {
+      transform: scale(1.2);
+      transition: all 0.3s;
     }
-    .enveloped {
-        flex-direction: column;
-        .box-social-media {
-            width: 100%;
-            height: 20rem;
-            flex-direction: column;
-            align-items: center;
-            .social-media {
-            padding: 1rem;
-            .instagram {
-                background-image: url(/assets/images/instagram.png);
-                transition: all 0.3s;
-                width: 4rem;
-                height: 4rem;
-                
-                
-            }
-            .instagram:hover {
-                background-image: url(/assets/images/instagram-color.png);
-                transition: all 0.3s;
-                
-                
-            }
-            .facebook {
-                background-image: url(/assets/images/facebook-white.png);
-                transition: all 0.3s;
-                width: 4rem;
-                height: 4rem;
-                
-                
-            }
-            .facebook:hover {
-                background-image: url(/assets/images/facebook-blue.png);
-                transition: all 0.4s;
-                
-                
-            }
-            .linkedin {
-                background-image: url(/assets/images/linkedin.png);
-                transition: all 0.3s;
-                width: 4rem;
-                height: 4rem;
-                
-                
-            }
-            .linkedin:hover {
-                background-image: url(/assets/images/linkedin-hover.png);
-                transition: all 0.4s;
-            
-                
-            }
-            .card-white {
-                transition: all 0.3s;
-            }
-            .card-white:hover {
-                transform: scale(1.2);
-                transition: all 0.3s;
-            }
-            }
+  }
+  .title-footer {
+    color: #f2f2f2;
+    padding: 1rem 1.6rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 4.2rem;
+  }
+  .enveloped {
+    flex-direction: column;
+    .box-social-media {
+      width: 100%;
+      height: 20rem;
+      flex-direction: column;
+      align-items: center;
+      .social-media {
+        padding: 1rem;
+        .instagram {
+          background-image: url(/assets/images/instagram.png);
+          transition: all 0.3s;
+          width: 4rem;
+          height: 4rem;
+        }
+        .instagram:hover {
+          background-image: url(/assets/images/instagram-color.png);
+          transition: all 0.3s;
+        }
+        .facebook {
+          background-image: url(/assets/images/facebook-white.png);
+          transition: all 0.3s;
+          width: 4rem;
+          height: 4rem;
+        }
+        .facebook:hover {
+          background-image: url(/assets/images/facebook-blue.png);
+          transition: all 0.4s;
+        }
+        .linkedin {
+          background-image: url(/assets/images/linkedin.png);
+          transition: all 0.3s;
+          width: 4rem;
+          height: 4rem;
+        }
+        .linkedin:hover {
+          background-image: url(/assets/images/linkedin-hover.png);
+          transition: all 0.4s;
+        }
+        .card-white {
+          transition: all 0.3s;
+        }
+        .card-white:hover {
+          transform: scale(1.2);
+          transition: all 0.3s;
+        }
+      }
+    }
+    .information {
+      flex-direction: column;
+      align-items: center;
+      .social-media-two {
+        .card-white {
+          animation: all 0.1s;
+        }
+        .card-white:hover {
+          animation: all 0.1s;
+          transform: scale(1);
+        }
+      }
+      .card-white:hover {
+        animation: all 0.1s;
+        transform: scale(1);
+      }
+      .email-footer {
+        display: flex;
+        width: 100%;
+        height: 4rem;
+        justify-content: center;
+        align-items: center;
+        .email {
+          color: white;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 
-        }
-        .information {
-            flex-direction: column;
-            align-items: center;
-            .social-media-two {
-                .card-white {
-                    animation: all .1s;   
-                }
-                .card-white:hover {
-                    animation: all .1s;
-                    transform: scale(1);
-                }
-            }
-            .card-white:hover {
-                animation: all .1s;
-                transform: scale(1);
-            }
-            .email-footer {
-                display: flex;
-                width: 100%;
-                height: 4rem;
-                justify-content: center;
-                align-items: center;
-                .email {
-                    color: white;
-                    font-size: 1rem;
-                    font-weight: bold;
-                }
-        
-            }
-        }
-    }
-
-    .rights {
-        color: white;
-        font-size: 1rem;
-        font-weight: 500;
-        padding: 1.2rem;
-    }
+  .rights {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1.2rem;
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
-    #footer {
-        height: 70rem;
-        .reserch {
-            background-image: linear-gradient(145deg, #130a69, #4b0a80);
-            width: 80%;
-            height: 17rem;
-            padding: 2rem 1.5rem ;
-            box-shadow: 1px 2px 6px rgb(0, 0, 0);
-            .paragraph-footer {
-                width: auto;
-                color: rgb(255, 255, 255);
-                height: 7.5rem;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-around;
-                text-align: center;
-                font-size: 1.5rem;
-                padding: 0.2rem;
-                .tight {
-                    font-weight: 800;
-                    padding: .2rem;
-                }
-                .tunaweb {
-                    border: .25rem;
-                    background-color: white;
-                    color: rgb(9, 27, 107);
-                    font-size: 2.12rem;
-                    font-weight: 800;
-                    padding: .5rem;
-                    text-transform: uppercase;
-                }
-            }
-            .button-row{
-                width: 100%;
-                margin: 1rem; 
-                justify-content: center;
-                .button-whats {
-                    box-shadow: 1px 2px 6px rgb(36, 36, 36);
-                    display: flex;
-                    height: 3rem;
-                    width: 22.5rem;
-                    border-radius: 2rem;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    text-decoration: none;
-                    background-image: linear-gradient(45deg, #92FFB0, #00E23F);
-                    .link-whats {
-                        color: #000000;
-                        font-size: 1.5rem;
-                        font-weight: 800;
-                        width: 19rem;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                }
-            }
+  #footer {
+    height: 70rem;
+    .reserch {
+      width: 80%;
+      height: 17rem;
+      box-shadow: 1px 1px 1px #38c771;
+      .paragraph-footer {
+        width: auto;
+        color: rgb(255, 255, 255);
+        height: 7.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0.2rem;
+        .tight {
+          font-weight: 800;
+          padding: 0.2rem;
         }
-        .title-footer {
-            color: #F2F2F2;
-            padding: 1rem 1.6rem;
-            text-transform: uppercase;
-            font-size: 1.2rem;
-            margin-top: 4.2rem;
+        .tunaweb {
+          border: 0.25rem;
+          background-color: white;
+          color: rgb(9, 27, 107);
+          font-size: 2.12rem;
+          font-weight: 800;
+          padding: 0.5rem;
+          text-transform: uppercase;
         }
-        .enveloped {
-            width: 100%;
-            flex-direction: row;
+      }
+      .button-row {
+        width: 100%;
+        margin: 1rem;
+        justify-content: center;
+        .button-whats {
+          box-shadow: 1px 2px 6px rgb(36, 36, 36);
+          display: flex;
+          height: 3rem;
+          width: 22.5rem;
+          border-radius: 2rem;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          background-image: linear-gradient(45deg, #92ffb0, #00e23f);
+          .link-whats {
+            color: #000000;
+            font-size: 1.5rem;
+            font-weight: 800;
+            width: 19rem;
+            display: flex;
+            justify-content: center;
             align-items: center;
-            .box-social-media {
-                width: 100%;
-                margin: 2rem 2rem;
-                height: 31rem;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                .social-media {
-                padding: 1rem;
-                }
-                
-            }
-            .information {
-                width: 100%;
-                height: 31rem;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 1rem;
-                border-left: 2px solid white;
-                .social-media-two {
-                    
-                    padding: 1rem;
-                    
-                    .email-footer {
-                        display: flex;
-                        width: 100%;
-                        height: 4rem;
-                        justify-content: center;
-                        align-items: center;
-                        .email {
-                            color: white;
-                            font-size: 1rem;
-                            font-weight: bold;
-                            
-                        }
-                
-                    }
-                }
-            }
-        }    
-
-
-        .rights {
-            color: white;
-            font-size: 1rem;
-            font-weight: 500;
-            padding: 1.2rem;
+          }
         }
+      }
     }
+    .title-footer {
+      color: #f2f2f2;
+      padding: 1rem 1.6rem;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      margin-top: 4.2rem;
+    }
+    .enveloped {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      .box-social-media {
+        width: 100%;
+        margin: 2rem 2rem;
+        height: 31rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .social-media {
+          padding: 1rem;
+        }
+      }
+      .information {
+        width: 100%;
+        height: 31rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border-left: 2px solid white;
+        .social-media-two {
+          padding: 1rem;
+
+          .email-footer {
+            display: flex;
+            width: 100%;
+            height: 4rem;
+            justify-content: center;
+            align-items: center;
+            .email {
+              color: white;
+              font-size: 1rem;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .rights {
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 1.2rem;
+    }
+  }
 }

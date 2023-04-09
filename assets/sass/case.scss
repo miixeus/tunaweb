@@ -2,7 +2,7 @@
     min-width: 320px;
     width: 100%;
     height: 130rem;
-    background-image: linear-gradient(145deg, #12021e, #0a304a);
+    background-image: linear-gradient(145deg, #d7d7d7, #222222);
     flex-direction: column;
     align-items: center;
     .box-case{
@@ -21,7 +21,7 @@
             .title-case{
                 border: 1px solid rgba(228, 228, 228, 0.521);
                 color: white;
-                background-image: linear-gradient(145deg, #130a69, #4b0a80);
+                background-image: linear-gradient(145deg, #222222, #000000);
                 font-weight: bold;
                 height: 4rem;
                 width: 19rem;
@@ -54,6 +54,7 @@
                 box-shadow: (2px 4px 10px rgb(0, 0, 0));
                 transition: all 0.1s;
                 transform: scale(1rem);
+
             }
         }    
         
@@ -158,7 +159,7 @@
             box-sizing: border-box;
             height: 35rem;
             margin-bottom: 5rem;
-            width: auto;
+            width: 80%;
             flex-direction: column;
                 .case-row1 {
                     flex-direction: row;

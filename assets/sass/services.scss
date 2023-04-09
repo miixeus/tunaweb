@@ -1,9 +1,9 @@
 #our-service {
     min-width: 320px;
     width: 100%;
-    height: 2042px;
+    height: 2041px;
     overflow: hidden;
-    background-image: linear-gradient(145deg, #004968, #081E17);
+    background-image: linear-gradient(145deg, #000000, #222222);
     clip-path: polygon(0% 1%, 100% 2%, 100% 100%, 0 100%);
     display: flex;
     flex-direction: column;
@@ -161,10 +161,10 @@
             margin-top: -.4rem;
             .img-dev {
                 background-color: white;
-                border-radius: 113% 336% 112%;
-                border: 1px solid black;
+                border-radius: .8rem;
                 z-index: 1;
                 position: relative;
+                box-shadow: 1px 1px 1px #38c771;
 
             }
         }
@@ -306,7 +306,6 @@
         .box-md-service-dev { 
             display: flex;
             flex-direction: row-reverse; 
-            background-image: linear-gradient(145deg, #004968, #081E17);
             border-radius: 0.5rem; 
             width: 43rem;
             margin: 4rem 2rem;
@@ -339,6 +338,8 @@
                 align-items: center;
                 margin-top: -.4rem;
                 .img-dev {
+                    background: none;
+                    box-shadow: none;
                 }
 
             }
@@ -390,7 +391,7 @@
             padding: 2rem;
             border-radius: 0.5rem;
             margin: 2rem 2rem;
-            background-image: linear-gradient(145deg, #004968, #081E17);
+            background-image: linear-gradient(145deg, #004968, #000000);
             box-shadow: 1px 3px 9px black;
             .box-container {
                 flex-direction: column;
@@ -437,7 +438,7 @@
         .box-md-service-two {
             display: flex;
             border-radius: .5rem;
-            background-image: linear-gradient(145deg, #004968, #081E17);
+            background-image: linear-gradient(145deg, #004968, #000000);
             box-shadow: 1px 3px 9px black;
             flex-direction: row;
             align-items: center;
@@ -490,7 +491,8 @@
         .box-md-service-dev { 
             display: flex;
             flex-direction: row-reverse; 
-            background-image: linear-gradient(145deg, #004968, #081E17);
+            background-image: linear-gradient(145deg, #004968, #000000);
+            box-shadow: 1px 3px 9px black;
             width: 60rem;
             margin: 4rem 2rem;
             .box-container-dev {
@@ -537,12 +539,12 @@
                 position: relative;
                 z-index: 1;
                 span {
-                    font-size: 2.25rem;
+                    font-size: 2rem;
                     font-weight: 500;
                 }
                 .light {
                     color: #ffffff;
-                    font-size: 1.4rem;
+                    font-size: 1.3rem;
                     font-weight: 300;
                 }
             }             

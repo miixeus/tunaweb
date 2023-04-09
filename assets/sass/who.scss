@@ -4,7 +4,7 @@
     width: 100%;
     height: 42rem;
     margin-top: -23.25rem;
-    background-image: linear-gradient(145deg, #004968, #081E17); 
+    background-image: linear-gradient(145deg, #000000, #222222); 
     .box-md {
         flex-direction: column;
         .identity {
@@ -80,7 +80,7 @@
 }
 @media(min-width:768px) {
     #who {
-        margin-top: -35.25rem;
+        margin-top: -28.25rem;
         flex-direction: row;
         justify-content: center;
         .box-md{
@@ -92,7 +92,7 @@
             .identity {
                 display: flex;
                 height: 122px; 
-                padding-top: 37rem;       
+                padding-top: 35rem;       
                 color: white;
                 font-weight: bold;
                 span {
