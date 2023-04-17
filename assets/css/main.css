@@ -1346,7 +1346,7 @@ button {
 }
 #case .box-carousel .carousel-case1 img, #case .box-carousel .carousel-case2 img, #case .box-carousel .carousel-case3 img, #case .box-carousel .carousel-case4 img {
   max-width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   filter: grayscale(1);
   transition: all 0.1s;
 }
@@ -1454,6 +1454,7 @@ button {
     margin-bottom: 5rem;
     width: 80%;
     flex-direction: column;
+    align-items: center;
   }
   #case .box-carousel .case-row1 {
     flex-direction: row;
@@ -1466,7 +1467,7 @@ button {
   }
   #case .box-carousel .case-row1 .carousel-case1 img, #case .box-carousel .case-row1 .carousel-case2 img {
     width: 18rem;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
   }
   #case .box-carousel .case-row2 {
     flex-direction: row;
@@ -1478,7 +1479,7 @@ button {
   }
   #case .box-carousel .case-row2 .carousel-case3 img, #case .box-carousel .case-row2 .carousel-case4 img {
     width: 18rem;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
   }
   #case .box-md-case {
     width: 80%;
