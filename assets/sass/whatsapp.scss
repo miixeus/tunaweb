@@ -35,3 +35,19 @@
       box-shadow: 0 0 0 0 transparent;
     }
   }
+  .top {
+    z-index: 10000;
+    img {
+      background: rgba(191, 191, 191, 0.562);
+      border-radius: .2rem;
+      transition: all .2s;
+
+    }
+    img:hover {
+      transform: scale(1.2);
+      transition: all .2s;
+      box-shadow: 1px 1px 5px black;
+    }
+
+  }
+
