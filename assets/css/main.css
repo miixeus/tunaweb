@@ -266,7 +266,7 @@ button {
     box-shadow: 1px 5px 8px black;
   }
   #nav.active #menu {
-    height: calc(100vh - 350px);
+    height: calc(100vh - 250px);
     visibility: visible;
     overflow-y: hidden;
     display: flex;
