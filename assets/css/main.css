@@ -297,12 +297,15 @@ button {
   }
   #nav.active #menu {
     height: calc(100vh - 250px);
+    top: 4.5rem;
     visibility: visible;
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-right: 2px solid #38c771;
+    border-bottom: 2px solid #38c771;
   }
   #menu a {
     padding: 1rem 0;
@@ -812,7 +815,8 @@ button {
   height: 8rem;
 }
 #our-service .box-md-service .box-video {
-  width: 320px;
+  width: 100%;
+  max-width: 100%;
   height: 188px;
   justify-content: center;
   align-items: center;
@@ -975,6 +979,7 @@ button {
   #our-service .box-md-service .box-title {
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 4rem;
   }
   #our-service .box-md-service .container-title {
     width: 25rem;
@@ -1133,8 +1138,6 @@ button {
     padding: 2rem;
     border-radius: 0.5rem;
     margin: 2rem 2rem;
-    background-image: linear-gradient(145deg, #004968, #000000);
-    box-shadow: 1px 3px 9px black;
   }
   #our-service .box-md-service .box-container {
     flex-direction: column;
@@ -1144,6 +1147,7 @@ button {
   #our-service .box-md-service .box-title {
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 4rem;
   }
   #our-service .box-md-service .container-title {
     width: 20rem;
@@ -1177,9 +1181,6 @@ button {
   }
   #our-service .box-md-service-two {
     display: flex;
-    border-radius: 0.5rem;
-    background-image: linear-gradient(145deg, #004968, #000000);
-    box-shadow: 1px 3px 9px black;
     flex-direction: row;
     align-items: center;
     padding: 2rem;
@@ -1230,8 +1231,6 @@ button {
   #our-service .box-md-service-dev {
     display: flex;
     flex-direction: row-reverse;
-    background-image: linear-gradient(145deg, #004968, #000000);
-    box-shadow: 1px 3px 9px black;
     width: 60rem;
     margin: 4rem 2rem;
   }
@@ -1350,19 +1349,18 @@ button {
   flex-direction: column;
 }
 #case .box-carousel .carousel-case1, #case .box-carousel .carousel-case2, #case .box-carousel .carousel-case3, #case .box-carousel .carousel-case4 {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 #case .box-carousel .carousel-case1 img, #case .box-carousel .carousel-case2 img, #case .box-carousel .carousel-case3 img, #case .box-carousel .carousel-case4 img {
+  width: 26rem;
   max-width: 100%;
   border-radius: 0.2rem;
-  filter: grayscale(1);
-  transition: all 0.1s;
+  transition: all 0.2s;
 }
 #case .box-carousel .carousel-case1 img:hover, #case .box-carousel .carousel-case2 img:hover, #case .box-carousel .carousel-case3 img:hover, #case .box-carousel .carousel-case4 img:hover {
-  filter: grayscale(0);
   box-shadow: 2px 4px 10px rgb(0, 0, 0);
-  transition: all 0.1s;
-  transform: scale(1rem);
+  transition: all 0.2s;
+  transform: scale(1.1);
 }
 #case .box-md-case {
   background-image: linear-gradient(145deg, #333333, #201e1e);
@@ -1723,7 +1721,8 @@ button {
 #footer .reserch {
   background-image: linear-gradient(145deg, #616161, #555555);
   box-shadow: 1px 1px 1px #38c771;
-  width: 20.12rem;
+  width: 31.12rem;
+  max-width: 100%;
   height: 12.5rem;
   margin-top: 5rem;
   display: flex;

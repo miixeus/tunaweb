@@ -32,7 +32,8 @@ window.addEventListener("click", function(event) {
     // esconder o pop-up
     popup.style.display = "none";
   }
-});
+}
+);
 
 
 

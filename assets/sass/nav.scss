@@ -106,12 +106,15 @@
 
   #nav.active #menu {
     height: calc(100vh - 250px);
+    top: 4.5rem;
     visibility: visible;
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
+    border-right: 2px solid #38c771;
+    border-bottom: 2px solid #38c771;
 
   }
   #menu a {

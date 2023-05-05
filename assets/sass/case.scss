@@ -42,18 +42,18 @@
             flex-direction: column;
         }
         .carousel-case1, .carousel-case2, .carousel-case3, .carousel-case4 {
-            padding: 2rem 0;
+            padding: 1rem 0;
             img {
+                width: 26rem;
                 max-width: 100%;
                 border-radius: .2rem;
-                filter: grayscale(1);
-                transition: all 0.1s;
+                transition: all 0.2s;
+
             }
             img:hover {
-                filter: grayscale(0);
                 box-shadow: (2px 4px 10px rgb(0, 0, 0));
-                transition: all 0.1s;
-                transform: scale(1rem);
+                transition: all 0.2s;
+                transform: scale(1.1);
 
             }
         }    
