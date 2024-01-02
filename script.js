@@ -57,7 +57,10 @@ function loadVideo() {
 window.onload = loadVideo;
 window.onresize = loadVideo;
 
-
+document.getElementById('video-player').addEventListener('loadeddata', function() {
+  // Vídeo carregado, agora podemos exibir a página ou fazer outras ações
+  console.log('Vídeo carregado!');
+});
 
 
 
