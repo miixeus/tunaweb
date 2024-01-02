@@ -40,12 +40,12 @@ function loadVideo() {
   var videoContainer = document.getElementById('video-container');
   var screenWidth = window.innerWidth;
 
-  if (screenWidth < 600) {
+  if (screenWidth <= 600) {
     videoPlayer.src = 'assets/images/Video-presantation-web-site-mobile.mp4';
-  } else if (screenWidth < 768) {
+  } else if (screenWidth <= 601) {
     videoPlayer.src = 'assets/images/Video-presantation-web-site-mobile-tablet.mp4';
   } 
-  else  {
+  else if (screenWidth < 1200) {
       videoPlayer.src = 'assets/images/Video-presantation-web-site.mp4';
   }
 

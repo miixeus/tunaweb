@@ -539,7 +539,7 @@ a:hover::before {
   display: flex;
   flex-direction: column;
   width: 146px;
-  height: 90px;
+  height: 110px;
   margin-top: 2rem;
   justify-content: space-between;
 }
@@ -555,8 +555,7 @@ a:hover::before {
   box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
 }
 #who .box-md .flex-image .list-who .li-two {
-  display: none;
-  background-color: #00CD3D;
+  background-color: #5F1BF2;
   border-radius: 75px 8px 96px 8px;
   height: 33px;
   font-weight: bold;
@@ -603,13 +602,14 @@ a:hover::before {
     font-weight: 700;
   }
   #who .box-md .flex-image {
-    padding-top: 29rem;
+    padding-top: 27rem;
     justify-content: space-between;
     position: relative;
     width: 21.5rem;
   }
   #who .box-md .flex-image .list-who {
     width: 14.5rem;
+    height: 9rem;
     padding-left: 2rem;
   }
   #who .box-md .flex-image .list-who .li-one {
