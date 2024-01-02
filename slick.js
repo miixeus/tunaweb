@@ -4,7 +4,7 @@ $('.carousel').slick({
     dots: true,
     infinite: true,
     speed: 600,
-    fade: true,
+    fade: false,
     autoplay: true,
     autoplaySpeed: 5000,
     button: false,

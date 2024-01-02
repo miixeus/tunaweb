@@ -6,7 +6,7 @@
   justify-content: space-between;
   position: relative;
 }
-a {
+#header a {
   position: relative;
   text-decoration: none;
   color: #333;
@@ -16,7 +16,7 @@ a {
 }
 
 /* Pseudo-elemento ::before para criar a borda inicialmente escondida */
-a::before {
+#header a::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -29,7 +29,7 @@ a::before {
 }
 
 /* Efeito de animação quando passa o cursor */
-a:hover::before {
+#header a:hover::before {
   transform: scaleX(1); /* Aumenta a largura da borda para 100% */
   transform-origin: bottom center; /* Muda a origem da transformação para o canto inferior esquerdo */
 }
@@ -42,6 +42,7 @@ a:hover::before {
     opacity: 0; /* Inicialmente, o link está invisível */
     transition: opacity 1s ease-in-out;
     overflow: visible;
+    z-index: 50000;
     .img-logo {
       position: absolute;
       font-size: 16px;
@@ -105,7 +106,7 @@ a:hover::before {
     align-items: center;
     justify-content:center;
     width: 100%;
-    top: 5.31rem;
+    top: 4.1rem;
     right: 0px;
     background-image: linear-gradient(to bottom, #ffffff, #ffffff);
     transition: 0.4s;
@@ -113,13 +114,12 @@ a:hover::before {
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
-    border-radius: 2rem 0 2rem  0;
-    box-shadow: 1px 5px 8px black;
+    border-radius: 0 0 2rem  0;
   }
 
   #nav.active #menu {
     height: calc(100vh - 250px);
-    top: 4.5rem;
+    top: 4.1rem;
     visibility: visible;
     overflow-y: hidden;
     display: flex;
