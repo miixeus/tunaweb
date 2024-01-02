@@ -57,15 +57,7 @@ function loadVideo() {
 window.onload = loadVideo;
 window.onresize = loadVideo;
 
-var delayedVideo = document.getElementById('delayedVideo');
 
-// Adiciona um evento para ser acionado quando a página for carregada
-window.onload = function() {
-    // Define um atraso de 5 segundos (5000 milissegundos) antes de iniciar a reprodução
-    setTimeout(function() {
-        delayedVideo.play(); // Inicia a reprodução do vídeo
-    }, 3000);
-};
 
 
 
