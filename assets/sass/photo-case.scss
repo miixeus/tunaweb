@@ -1,21 +1,96 @@
-#photo-case {
-    min-width: 320px;
+#main {
+  #photo-case {
+    display: flex;
     width: 100%;
     justify-content: center;
-    z-index: 1;
-    margin-top: 5.3rem;
-    img {
-        min-width: 320px;
-    }
-}
-
-@media(min-width:768px) {
-    #photo-case {
+    z-index: 5;
+    position: relative;
+    #video-container {
+      min-width: 320px;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      z-index: 1;
+      }
+      .button-row-video{
+        position: absolute;
         width: 100%;
+        top: 30rem;
         justify-content: center;
-        margin-top: 5rem;
-        z-index: 1;
-        img {
+        z-index: 2000;
+        
+        .button-whats {
+            transition: all 0.3s;
+            display: flex;
+            height: 1.62rem;
+            width: 10.22rem;
+            border-radius: 20px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 1px 2px 6px rgb(31, 31, 31);
+            background-image: linear-gradient(45deg, #92FFB0, #00E23F);
+            .link-whats {
+                color: #000000;
+                font-size: 8px;
+                font-weight: 800;
+                width: 195px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            .box-img-whats{
+              width: 20px;
+              height: 20px;
+            }
+            }
         }
     }
+    .button-whats:hover {
+        transform: scale(1.2);
+        transition: all 0.3s;
+    }
+    
+
+      
+    }
 }
+@media (max-width: 600px) {
+  #video-container {
+    height: calc(100vw * 9 / 16);
+  }
+}
+@media (min-width: 601px) {
+  #video-container {
+    height: calc(100vw * 3 / 4);
+  }
+}
+
+@media (min-width: 820px) {
+  #photo-case {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    z-index: 5;
+    #video-container {
+      width: 100%;
+      justify-content: center;
+      z-index: 1;
+      }
+  }
+}
+
+@media (min-width: 1200px) {
+  #photo-case {
+      display: flex;
+      width: 90%;
+      justify-content: center;
+      z-index: 5;
+      #video-container {
+        width: 100%;
+        justify-content: center;
+        z-index: 1;
+        }
+    }
+  }
+

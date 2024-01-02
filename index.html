@@ -59,11 +59,15 @@
                 
               </div>
         </section>
-            <header id="header" class="fade-in-bottom">
+            <header id="header">
                 <a href="#" class="logo">
-                    <picture>
+                    <picture class="img-logo">
+                        <source srcet="./assets/images/glob-new.png">
+                        <img src="./assets/images/glob-new.png" alt="Logo Tunaweb" style="width: 120px; height: 126px; border-radius: 8px 0 0 8px" >
+                    </picture>
+                    <picture class="img-write">
                         <source srcet="./assets/images/digital-globe-no-bc.svg">
-                        <img src="./assets/images/digital-globe-no-bc.svg" alt="Logo Tunaweb" style="width: 200px; height: 68px; border-radius: 8px 0 0 8px" >
+                        <img src="./assets/images/logo-marc.png" alt="Logo Tunaweb" style="width: 150px; height: auto; border-radius: 8px 0 0 8px" >
                     </picture>
                 </a>
                 <nav id="nav" >
@@ -85,13 +89,25 @@
             </header>
           <main id="main">
             <section id="photo-case">
-                <div>
-                    <picture>
-                        <source srcset="assets/images/banner-whit-definition-no-background-414.png" media="(min-width: 414px)">
-                        <source srcset="assets/images/banner-whit-definition-no-background-256-7.png" media="(min-width: 256px)">         
-                        <img src="/assets/images/banner-whit-definition-no-background.png" alt="imagem rede sociais" style="max-width: 100%;">
-                    </picture>
+                <div id="video-container">
+                    <video id="video-player" width="100%" autoplay>
+                        <source src="/assets/images/Video-presantation-web-site-mobile.mp4" type="video/mp4">
+                    </video>
                 </div>
+                <!--<div class="button-row-video">
+                    <div class="button-whats">
+                        <a href="https://api.whatsapp.com/send?phone=5554981153277&text=Olá,%20estou%20interessado%20em%20conversar%20mais%20sobre%20minha%20identitade%20na%20web."
+                        target="_blank" class="link-whats">CONVERSE COM A GENTE</a>
+                            <div class="box-img-whats">
+                                <a href="https://api.whatsapp.com/send?phone=5554981153277&text=Olá,%20estou%20interessado%20em%20conversar%20mais%20sobre%20minha%20identitade%20na%20web."
+                                target="_blank">
+                                    <picture>
+                                        <img src="/assets/images/whatsapp-button.png" alt="botão do whatsapp" style="width: 30px; height: 30px;">
+                                    </picture>
+                                </a>
+                            </div>
+                    </div>
+                </div>-->
             </section>
             <section id="who" data-aos="fade-up">
                 <div class="box-md" class="fade-in-long">
@@ -268,7 +284,7 @@
                         <div class="box-img">
                             <picture class="img-dev">
                                 <source src="/assets/images/responsive-website.png">
-                                <img src="/assets/images/responsive-website.png" alt="layout de web sites responsivos" width="350" >
+                                <img src="/assets/images/mockup-site.png" alt="layout de web sites responsivos" width="350" >
                             </picture>
                         </div>
                     </div>

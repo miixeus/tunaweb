@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat-Black"), url("../fonts/Montserrat-Black.ttf") format("truetype");
@@ -101,6 +102,9 @@
   margin: 0;
   padding: 0;
 }
+* ::selection {
+  background-color: #28007f;
+}
 
 div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr {
   display: flex;
@@ -194,73 +198,81 @@ button {
   position: relative;
 }
 
-#header .logo {
-  transition: all 0.3s;
+a {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  overflow: hidden;
+  transition: color 0.3s; /* Adiciona uma transição suave à cor do texto */
 }
 
-#header .logo:hover {
-  transition: all 0.3s;
+/* Pseudo-elemento ::before para criar a borda inicialmente escondida */
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #00CD3D; /* Cor da borda */
+  bottom: 0;
+  transform: scaleX(0); /* Inicialmente, a borda tem largura zero */
+  transform-origin: bottom center; /* Origem da transformação no canto inferior direito */
+  transition: transform 0.1s ease-out; /* Adiciona uma transição suave à largura da borda */
+}
+
+/* Efeito de animação quando passa o cursor */
+a:hover::before {
+  transform: scaleX(1); /* Aumenta a largura da borda para 100% */
+  transform-origin: bottom center; /* Muda a origem da transformação para o canto inferior esquerdo */
+}
+
+/* Altera a cor do texto ao passar o cursor */
+#header {
+  /* Aplica o efeito de aparecimento após 3 segundos */
+}
+#header .logo {
+  display: flex;
+  flex-direction: row;
+  opacity: 0; /* Inicialmente, o link está invisível */
+  transition: opacity 1s ease-in-out;
+  overflow: visible;
+}
+#header .logo .img-logo {
+  position: absolute;
+  font-size: 16px;
+  margin-left: -1rem;
+}
+#header .logo .img-write {
+  position: absolute;
+  margin-left: 7rem;
+}
+@keyframes appearAnimation {
+  to {
+    opacity: 1; /* Define a opacidade para 1 (totalmente visível) ao final da animação */
+  }
+}
+#header .logo {
+  animation: appearAnimation 1s 3s forwards; /* 1s de duração, atraso de 3s antes de começar, manter os estilos finais */
+  overflow: visible;
 }
 
 #header {
   min-width: 320px;
+  padding: 2rem;
   display: flex;
-  width: 90%;
+  width: 100%;
   align-items: center;
-  margin-top: 0.4rem;
+  margin-top: 1.1rem;
   justify-content: space-between;
   position: fixed;
   z-index: 1000;
   background-color: #ffffff;
-  border-radius: 5rem 0.8rem 0.8rem 5rem;
   box-shadow: 1px 3px 12px black;
-  transition: all 0.4s;
 }
 
 #nav {
   justify-content: end;
   width: 100%;
-}
-
-#header .blue-link:hover {
-  background-color: #242424;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  color: #e9e9e9;
-  transition: all 0.4s;
-  text-decoration-line: 12px;
-}
-
-#header .pink-link:hover {
-  background-color: #242424;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  color: #e9e9e9;
-  transition: all 0.3s;
-}
-
-#header .yellow-link:hover {
-  background-color: #242424;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  color: #e9e9e9;
-  transition: all 0.3s;
-}
-
-#header .green-link:hover {
-  background-color: #242424;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  color: #e9e9e9;
-  transition: all 0.3s;
-}
-
-#header .dark-link:hover {
-  background-color: #242424;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  color: #e9e9e9;
-  transition: all 0.3s;
 }
 
 #menu {
@@ -391,22 +403,96 @@ button {
     font-weight: 400;
   }
 }
-#photo-case {
-  min-width: 320px;
+@media (max-width: 420px) {
+  #header .logo .img-write {
+    display: none;
+  }
+}
+#main #photo-case {
+  display: flex;
   width: 100%;
   justify-content: center;
-  z-index: 1;
-  margin-top: 5.3rem;
+  z-index: 5;
+  position: relative;
 }
-#photo-case img {
+#main #photo-case #video-container {
   min-width: 320px;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  z-index: 1;
+}
+#main #photo-case .button-row-video {
+  position: absolute;
+  width: 100%;
+  top: 30rem;
+  justify-content: center;
+  z-index: 2000;
+}
+#main #photo-case .button-row-video .button-whats {
+  transition: all 0.3s;
+  display: flex;
+  height: 1.62rem;
+  width: 10.22rem;
+  border-radius: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 1px 2px 6px rgb(31, 31, 31);
+  background-image: linear-gradient(45deg, #92FFB0, #00E23F);
+}
+#main #photo-case .button-row-video .button-whats .link-whats {
+  color: #000000;
+  font-size: 8px;
+  font-weight: 800;
+  width: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main #photo-case .button-row-video .button-whats .link-whats .box-img-whats {
+  width: 20px;
+  height: 20px;
+}
+#main #photo-case .button-whats:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 600px) {
+  #video-container {
+    height: 56.25vw;
+  }
+}
+@media (min-width: 601px) {
+  #video-container {
+    height: 75vw;
+  }
+}
+@media (min-width: 820px) {
   #photo-case {
+    display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 5rem;
+    z-index: 5;
+  }
+  #photo-case #video-container {
+    width: 100%;
+    justify-content: center;
+    z-index: 1;
+  }
+}
+@media (min-width: 1200px) {
+  #photo-case {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    z-index: 5;
+  }
+  #photo-case #video-container {
+    width: 100%;
+    justify-content: center;
     z-index: 1;
   }
 }
@@ -416,7 +502,7 @@ button {
   width: 100%;
   height: 42rem;
   margin-top: -23.25rem;
-  background-image: linear-gradient(145deg, #000000, #222222);
+  background-color: #000000;
 }
 #who .box-md {
   flex-direction: column;
@@ -448,15 +534,17 @@ button {
   box-shadow: 1px 7px 8px black;
 }
 #who .box-md .flex-image .list-who {
+  color: white;
   position: relative;
   display: flex;
   flex-direction: column;
   width: 146px;
-  height: 140px;
+  height: 90px;
+  margin-top: 2rem;
   justify-content: space-between;
 }
 #who .box-md .flex-image .list-who .li-one {
-  background-color: #DD1960;
+  background-color: #5F1BF2;
   border-radius: 75px 8px 96px 8px;
   height: 33px;
   font-weight: bold;
@@ -467,7 +555,8 @@ button {
   box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
 }
 #who .box-md .flex-image .list-who .li-two {
-  background-color: #B4C538;
+  display: none;
+  background-color: #00CD3D;
   border-radius: 75px 8px 96px 8px;
   height: 33px;
   font-weight: bold;
@@ -478,7 +567,7 @@ button {
   box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
 }
 #who .box-md .flex-image .list-who .li-three {
-  background-color: #17A2CD;
+  background-color: #5F1BF2;
   border-radius: 75px 8px 96px 8px;
   height: 33px;
   font-weight: bold;
@@ -505,7 +594,7 @@ button {
   #who .box-md .identity {
     display: flex;
     height: 122px;
-    padding-top: 35rem;
+    padding-top: 37rem;
     color: white;
     font-weight: bold;
   }
@@ -524,7 +613,6 @@ button {
     padding-left: 2rem;
   }
   #who .box-md .flex-image .list-who .li-one {
-    background-color: #DD1960;
     border-radius: 75px 8px 96px 8px;
     height: 2.6rem;
     font-weight: 500;
@@ -536,7 +624,6 @@ button {
     box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
   }
   #who .box-md .flex-image .list-who .li-two {
-    background-color: #B4C538;
     border-radius: 75px 8px 96px 8px;
     height: 2.6rem;
     font-weight: 500;
@@ -548,7 +635,6 @@ button {
     box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
   }
   #who .box-md .flex-image .list-who .li-three {
-    background-color: #17A2CD;
     border-radius: 75px 8px 96px 8px;
     height: 2.6rem;
     font-weight: 500;

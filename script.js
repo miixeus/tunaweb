@@ -35,6 +35,37 @@ window.addEventListener("click", function(event) {
 }
 );
 
+function loadVideo() {
+  var videoPlayer = document.getElementById('video-player');
+  var videoContainer = document.getElementById('video-container');
+  var screenWidth = window.innerWidth;
+
+  if (screenWidth < 600) {
+    videoPlayer.src = 'assets/images/Video-presantation-web-site-mobile.mp4';
+  } else if (screenWidth < 768) {
+    videoPlayer.src = 'assets/images/Video-presantation-web-site-mobile-tablet.mp4';
+  } 
+  else  {
+      videoPlayer.src = 'assets/images/Video-presantation-web-site.mp4';
+  }
+
+  // Reload the video
+  videoPlayer.load();
+}
+
+// Call the function on page load and on window resize
+window.onload = loadVideo;
+window.onresize = loadVideo;
+
+var delayedVideo = document.getElementById('delayedVideo');
+
+// Adiciona um evento para ser acionado quando a página for carregada
+window.onload = function() {
+    // Define um atraso de 5 segundos (5000 milissegundos) antes de iniciar a reprodução
+    setTimeout(function() {
+        delayedVideo.play(); // Inicia a reprodução do vídeo
+    }, 3000);
+};
 
 
 
