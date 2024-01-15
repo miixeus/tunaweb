@@ -2,11 +2,11 @@ $('.carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 600,
-    fade: false,
+    fade: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     button: false,
   });
   
