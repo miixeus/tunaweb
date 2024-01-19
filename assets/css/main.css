@@ -481,7 +481,9 @@ button {
   }
   #photo-case #video-container {
     width: 100%;
+    max-width: 900px;
     justify-content: center;
+    align-items: center;
     z-index: 1;
   }
 }
@@ -1083,7 +1085,7 @@ button {
     display: none;
   }
   #our-service .box-md-service .paragraph {
-    width: 40rem;
+    width: 16rem;
     color: white;
     height: 20rem;
     margin-top: 30px;
@@ -1093,11 +1095,11 @@ button {
     text-align: center;
   }
   #our-service .box-md-service .paragraph span {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
   }
   #our-service .box-md-service .paragraph .light {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 300;
   }
   #our-service .box-md-service-two {
