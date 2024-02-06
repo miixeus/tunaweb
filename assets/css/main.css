@@ -490,13 +490,13 @@ button {
 @media (min-width: 1200px) {
   #photo-case {
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: center;
     z-index: 5;
   }
   #photo-case #video-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     justify-content: center;
     z-index: 1;
   }
