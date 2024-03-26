@@ -98,4 +98,18 @@
         }
     }
   }
-
+  @media (min-width: 1980px) {
+    #photo-case {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        z-index: 5;
+        #video-container {
+          width: 100%;
+          max-width: 900px;
+          justify-content: center;
+          z-index: 1;
+          }
+      }
+    }
+  

@@ -501,6 +501,20 @@ button {
     z-index: 1;
   }
 }
+@media (min-width: 1980px) {
+  #photo-case {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    z-index: 5;
+  }
+  #photo-case #video-container {
+    width: 100%;
+    max-width: 900px;
+    justify-content: center;
+    z-index: 1;
+  }
+}
 #who {
   display: flex;
   flex-direction: column;
@@ -525,6 +539,12 @@ button {
 #who .box-md .identity span {
   font-size: 68px;
   font-weight: 700;
+}
+#who .box-md .identity .dg-span {
+  background-image: linear-gradient(145deg, #38c771, #5f1bf2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 #who .box-md .flex-image {
   display: flex;

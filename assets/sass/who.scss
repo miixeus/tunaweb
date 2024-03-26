@@ -19,7 +19,12 @@
             span {
             font-size: 68px;
             font-weight: 700;
-
+            }
+            .dg-span {
+                background-image: linear-gradient(145deg, #38c771, #5f1bf2);
+                background-clip: text;
+                -webkit-background-clip: text; 
+                color: transparent;
             }
 
         }
