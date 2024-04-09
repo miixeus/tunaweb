@@ -529,7 +529,7 @@ button {
 #who .box-md .identity {
   display: flex;
   height: 122px;
-  padding-top: 29rem;
+  padding-top: 30rem;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -698,7 +698,7 @@ button {
 }
 #details .box-md-who .img-who {
   bottom: -38px;
-  opacity: 0.1;
+  opacity: 0.4;
   position: absolute;
   z-index: 0;
 }
@@ -926,7 +926,7 @@ button {
   height: 8rem;
 }
 #our-service .box-md-service .box-video {
-  width: 100%;
+  width: 56%;
   max-width: 100%;
   height: 188px;
   justify-content: center;
@@ -964,6 +964,9 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#our-service .box-md-service-two .box-container-two .slick-prev:before, #our-service .box-md-service-two .box-container-two .slick-next:before {
+  color: #38c771;
 }
 #our-service .box-md-service-two .box-container-two .container-title-two {
   color: #ffffff;
