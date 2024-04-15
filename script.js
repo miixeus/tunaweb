@@ -51,6 +51,18 @@ function loadVideo() {
 
   // Reload the video
   videoPlayer.load();
+
+  // Limitar o carregamento do vídeo para apenas uma vez
+  var playedOnce = false;
+
+  videoPlayer.addEventListener('play', function () {
+      if (!playedOnce) {
+          playedOnce = true;
+      } else {
+          videoPlayer.pause();
+      }
+    });
+
 }
 
 // Call the function on page load and on window resize
