@@ -74,5 +74,32 @@ document.getElementById('video-player').addEventListener('loadeddata', function(
   console.log('Vídeo carregado!');
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  var videoPlayer = document.getElementById('video-player');
+  var spinnerContainer = document.querySelector('.spinner-container');
 
+  // Mostra o spinner imediatamente ao carregar a página
+  spinnerContainer.style.display = 'flex';
 
+  // Adiciona classe quando o vídeo é carregado
+  videoPlayer.addEventListener('loadeddata', function () {
+      spinnerContainer.classList.add('video-loaded');
+
+      // Oculta o spinner após o carregamento do vídeo
+      spinnerContainer.style.display = 'none';
+
+      // Inicia a reprodução do vídeo após o carregamento
+      videoPlayer.play();
+
+      // Mostra a página principal após 5 segundos
+      setTimeout(function () {
+          document.body.classList.add('show-page');
+      }, 5000); // 5000 milissegundos = 5 segundos
+  });
+
+  // Caso ocorra algum erro ao carregar o vídeo
+  videoPlayer.addEventListener('error', function () {
+      spinnerContainer.style.display = 'none';
+      console.error('Erro ao carregar o vídeo.');
+  });
+});
