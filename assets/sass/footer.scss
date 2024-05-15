@@ -7,15 +7,16 @@
   background-image: linear-gradient(#222222, #000000);
   align-items: center;
   .reserch {
-    background-image: linear-gradient(145deg, #616161, #555555);
+    background-image:url(../images/back-talk-two.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 1px 1px 1px #38c771;
-    width: 31.12rem;
+    width:100%;
     max-width: 100%;
     height: 12.5rem;
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    border-radius: 0.5rem;
     justify-content: center;
     align-items: center;
     .paragraph-footer {
@@ -39,8 +40,13 @@
         padding: 0.5rem;
         text-transform: uppercase;
         background-color: white;
-        color: rgb(9, 27, 107);
         text-transform: uppercase;
+        span {
+          background-image: linear-gradient(145deg, #38c771, #5f1bf2);
+          background-clip: text;
+          -webkit-background-clip: text; 
+          color: transparent;
+        }
       }
     }
     .button-row {
@@ -174,9 +180,6 @@
   #footer {
     height: 70rem;
     .reserch {
-      background-image:url(../images/back-talk-two.png);
-      background-repeat: no-repeat;
-      background-size: cover;
       width: 100%;
       height: 17rem;
       border-radius: 0rem;
