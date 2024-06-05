@@ -37,33 +37,37 @@ window.addEventListener("click", function(event) {
 
 function loadVideo() {
   var videoPlayer = document.getElementById('video-player');
-  var videoContainer = document.getElementById('video-container');
   var screenWidth = window.innerWidth;
 
+  // Definir a fonte do vídeo com base na largura da tela
   if (screenWidth <= 600) {
     videoPlayer.src = 'assets/images/Video-presantation-web-site-mobile.mp4';
-  } else if (screenWidth <= 601) {
+  } else if (screenWidth <= 1200) {
     videoPlayer.src = 'assets/images/Video-presantation-web-site-mobile-tablet.mp4';
-  } 
-  else if (screenWidth < 1200) {
-      videoPlayer.src = 'assets/images/Video-presantation-web-site.mp4';
+  } else {
+    videoPlayer.src = 'assets/images/Video-presantation-web-site-desktop.mp4';
   }
 
-  // Reload the video
+  // Recarregar o vídeo
   videoPlayer.load();
 
   // Limitar o carregamento do vídeo para apenas uma vez
   var playedOnce = false;
 
   videoPlayer.addEventListener('play', function () {
-      if (!playedOnce) {
-          playedOnce = true;
-      } else {
-          videoPlayer.pause();
-      }
-    });
-
+    if (!playedOnce) {
+      playedOnce = true;
+    } else {
+      videoPlayer.pause();
+    }
+  });
 }
+
+// Chamar a função quando a janela é carregada
+window.addEventListener('load', loadVideo);
+
+// Chamar a função quando a janela é redimensionada
+window.addEventListener('resize', loadVideo);
 
 // Call the function on page load and on window resize
 window.onload = loadVideo;
