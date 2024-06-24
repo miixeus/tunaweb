@@ -672,6 +672,13 @@ button {
     box-shadow: 3px 3px 10px 0px rgb(0, 0, 0);
   }
 }
+@media (min-width: 1768px) {
+  #who {
+    margin-top: -22.25rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 #details {
   min-width: 320px;
   height: 48.75rem;
