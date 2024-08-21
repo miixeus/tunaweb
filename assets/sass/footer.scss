@@ -63,6 +63,7 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
+        transition: all 0.3s;
         background-image: linear-gradient(45deg, #92ffb0, #00e23f);
         .link-whats {
           color: #000000;
@@ -75,9 +76,11 @@
         }
       }
     }
-    .button-row:hover {
+    .button-whats:hover {
+      border: #28007f inherit 1px;
       transform: scale(1.2);
       transition: all 0.3s;
+      background-image: linear-gradient(45deg, #9564ff, #28007f);
     }
   }
   .title-footer {
