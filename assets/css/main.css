@@ -458,11 +458,6 @@ button {
   transition: all 0.3s;
 }
 
-@media (max-width: 600px) {
-  #video-container {
-    height: 56.25vw;
-  }
-}
 @media (min-width: 601px) {
   #video-container {
     margin-top: 2rem;
